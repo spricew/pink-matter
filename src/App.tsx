@@ -1,33 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import MiniCard from "./components/Card/MiniCard"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="absolute inset-0 -z-5 w-full h-full">
+      <img src="/sss.jpg" alt="Background"
+      className="object-cover w-full " />
+    </div>
+    <div className="flex gap-2 p-24">
+      <MiniCard text="Hola, soy una tarjeasdasd a ad asd  ads ad  s as seda deas deas dsa sdasdasdta!" />
+      <MiniCard text="Hola, soy una tarjeta!" brightness={10} darkness={50} />
+      <MiniCard text="Hola, soy una tarjeta!" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
