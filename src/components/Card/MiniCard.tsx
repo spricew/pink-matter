@@ -9,12 +9,12 @@ export interface MiniCardProps {
 
 export function MiniCard({ text, brightness = 10, darkness = 10 }: MiniCardProps) {
     const safeBrightness = useClamp(brightness, 0, 100, "brightness");
-    const bgBrigthness = safeBrightness / 100;
+    const bgBrigtness = safeBrightness / 100;
 
     const bgDarkness = darkness / 100;
     return (
         <div
-            style={{ backgroundColor: `rgba(255,255,255,${bgBrigthness})` }}
+            style={{ backgroundColor: `rgba(255,255,255,${bgBrigtness})` }}
             className="inline-flex max-w-80 h-50 flex-col gap-4 p-8 
             rounded-4xl ring-1 ring-inset ring-white/20 backdrop-blur-xl shadow-xl overflow-hidden"
         >
