@@ -1,5 +1,4 @@
-import MiniCard from "./components/Card/MiniCard";
-import CardPrimary from "./components/Card/CardPrimary";
+import { MiniCard } from "./components/Card/MiniCard";
 
 function App() {
 
@@ -11,8 +10,7 @@ function App() {
             className="object-cover w-full h-full" />
         </div>
         <div className="flex gap-2 p-24">
-          <MiniCard text="Hola, soy una tarjeasdasd a ad asd  ads ad  s as seda deas deas dsa sdasdasdta!" />
-          <CardPrimary text="Hola, soy una tarjeta!" />
+          <MiniCard text="Holaasd, soy una tarjeasdasd a ad asd  ads ad  s as seda deas deas dsa sdasdasdta!" />
         </div>
       </div>
     </>
