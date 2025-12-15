@@ -11,7 +11,9 @@ export function MiniCard({ text, brightness = 10, darkness = 10 }: MiniCardProps
     const safeBrightness = useClamp(brightness, 0, 100, "brightness");
     const bgBrigtness = safeBrightness / 100;
 
-    const bgDarkness = darkness / 100;
+    const safeDarkness = useClamp(darkness, 0, 100, "darkness");
+    const bgDarkness = safeDarkness / 100;
+
     return (
         <div
             style={{ backgroundColor: `rgba(255,255,255,${bgBrigtness})` }}
