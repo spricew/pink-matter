@@ -12,7 +12,7 @@ function MiniCard({ text, brightness = 10, darkness = 10 }: Props) {
 
     const bgDarkness = darkness / 100;
     return (
-        <div id="ola"
+        <div
             style={{ backgroundColor: `rgba(255,255,255,${bgBrigthness})` }}
             className="inline-flex max-w-80 h-50 flex-col gap-4 p-8 
              ring-1 ring-white/20 backdrop-blur-xl shadow-xl overflow-hidden"
