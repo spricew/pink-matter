@@ -1,4 +1,5 @@
 import { MiniCard } from "./components/Card/MiniCard";
+import React from "./components/ReactIcon";
 
 function App() {
 
@@ -9,8 +10,9 @@ function App() {
           <img src="/bgDemo.jpg" alt="Background"
             className="object-cover w-full h-full" />
         </div>
-        <div className="flex gap-2 p-24">
-          <MiniCard text="Holaasd, soy una tarjeasdasd a ad asd  ads ad  s as seda deas deas dsa sdasdasdta!" />
+        <div className="flex flex-wrap gap-2 p-24 h-full text-wrap">
+          <MiniCard text="Hello world!" 
+          Icon={React}/>
         </div>
       </div>
     </>
